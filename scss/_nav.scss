@@ -1,6 +1,7 @@
 $main-color: black;
 nav {
   display: flex;
+
   ul {
     display: flex;
     gap: 2em;
@@ -12,10 +13,12 @@ nav {
         text-decoration: none;
         color: black;
         display: flex;
-
-        :hover{
-            color: red;
+        align-items: center;
+        padding: 5px;
+        :hover {
+          color: blue;
           text-decoration: underline;
+          transition: 1s;
         }
       }
     }
