@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  gap: 2em;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #0ff144;
+  display: flex;
+}
+
+/*# sourceMappingURL=test.css.map */
