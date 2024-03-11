@@ -1,7 +1,5 @@
-$main-color: black;
 nav {
   display: flex;
-
   ul {
     display: flex;
     gap: 2em;
@@ -11,14 +9,10 @@ nav {
 
       a {
         text-decoration: none;
-        color: black;
+        color: $main-color;
         display: flex;
-        align-items: center;
-        padding: 5px;
-        :hover {
-          color: blue;
-          text-decoration: underline;
-          transition: 1s;
+        &:hover{
+          color: red;
         }
       }
     }

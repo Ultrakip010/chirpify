@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include 'add_user.php'; ?>
     <form method="POST" action="/PHP/add_user.php">
     <label for="username">Username:</label>
     <input type="text" name="username" id="username" required><br>

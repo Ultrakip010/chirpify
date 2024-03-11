@@ -13,7 +13,7 @@ try {
         $query->bindParam(":password", $password);
 
         if($query->execute()) {
-            echo "de nieuwe gegevens zijn toegevoegd.";
+            header('location: /PHP/home.html');
         } else {
             echo "Er is een fout opgetreden!";
         }
@@ -23,5 +23,4 @@ try {
 } catch (PDOException $e) {
     die("Error!: " . $e->getMessage());
 }
-?>
 

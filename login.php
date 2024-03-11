@@ -22,4 +22,4 @@ try {
 } catch (PDOException $e) {
     die("Error!: " . $e->getMessage());
 }
-header("Location: /PHP/index.html");
+header("Location: /PHP/home.html");
