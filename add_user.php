@@ -13,7 +13,7 @@ try {
         $query->bindParam(":password", $password);
 
         if($query->execute()) {
-            header('location: /PHP/home.html');
+            header('location: /chirpify/home.php');
         } else {
             echo "Er is een fout opgetreden!";
         }

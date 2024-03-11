@@ -1,0 +1,44 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    input{
+        margin-top: 1em;
+    }
+    button{
+        margin-top: 1em;
+    }
+    p{
+        margin-top: 1em;
+    }
+    .error{
+        color: red;
+    }
+    .success{
+        color: green;
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        input{
+            margin-top: 1em;
+        }
+        button{
+            margin-top: 1em;
+        }
+        p{
+            margin-top: 1em;
+        }
+        .error{
+            color: red;
+        }
+        .success{
+            color: green;
+        }
+    }
+}

@@ -14,13 +14,39 @@ nav ul li a {
   display: flex;
 }
 nav ul li a:hover {
-  color: red;
+  color: #ff0000;
 }
 
-h2 {
+body {
+  display: flex;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #0ff144;
+}
+body h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body form label {
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
 }
 
 form {
@@ -28,6 +54,52 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 1em;
+}
+form input {
+  margin-top: 1em;
+}
+form button {
+  margin-top: 1em;
+}
+form p {
+  margin-top: 1em;
+}
+form .error {
+  color: red;
+}
+form .success {
+  color: green;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+form .form-group input {
+  margin-top: 1em;
+}
+form .form-group button {
+  margin-top: 1em;
+}
+form .form-group p {
+  margin-top: 1em;
+}
+form .form-group .error {
+  color: red;
+}
+form .form-group .success {
+  color: green;
+}
+
+body {
+  background-color: #000000;
+}
+
+body {
+  color: #0ff144;
 }
 
 /*# sourceMappingURL=main.css.map */

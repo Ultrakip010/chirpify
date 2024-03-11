@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
-<body>
+<body class="home">
     <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="index.html">Login</a></li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="tweet.php">Tweet</a></li>
         </ul>
     </nav>
 </body>
 </html>
+<?php
