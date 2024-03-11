@@ -11,6 +11,7 @@
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="tweet.php">Tweet</a></li>
+            <li><a href="index.php">Logout</a></li>
         </ul>
     </nav>
 </body>
