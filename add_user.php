@@ -1,4 +1,7 @@
 <?php
+
+require_once('authenticate.php');
+
 try {
     $db = new PDO("mysql:host=localhost;dbname=y", "root", "");
 

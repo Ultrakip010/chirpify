@@ -1,4 +1,6 @@
-
+<?php
+require_once ('authenticate.php');
+?>
     <?php
     $servername = "localhost";
     $username = "root";

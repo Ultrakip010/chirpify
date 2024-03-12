@@ -1,39 +1,16 @@
 <?php
-/*
-if(isset($_POST['name'])) {
-    if(preg_match("/[^A-Za-z'-]/",$_POST['name'] )) {
-        die ("invalid name and name should be alpha");
-    }
-    echo $_POST['name']. "<br />";
-
-    exit();
-}
-?>
-
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <title>tweaking</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-        Plaats bericht: <input type="text" name="name" />
-        <input type="submit" />
-    </form>
-</body>
-</html>
-*/
-
-
+session_start(); // Start the session
+require ('authenticate.php');
 try {
-    require('conn.php'); // connectie maken met de database
+    require('conn.php');
 
     if (isset($_POST)) {
-        $tweet_message = $_POST['tweet_message'];
+        $content = $_POST['content'];
+        $user_id = $_SESSION['user_id']; // assuming you have user_id in session
 
-        $query = $db->prepare("INSERT INTO tweets(tweet_message) VALUES (:tweet_message)");
-        $query->bindParam(":tweet_message", $tweet_message);
+        $query = $db->prepare("INSERT INTO tweets(content, user_id) VALUES (:content, :user_id)");
+        $query->bindParam(":content", $content);
+        $query->bindParam(":user_id", $user_id);
 
         if($query->execute()) {
             header('location: /chirpify/tweetviewer.php');
@@ -46,4 +23,3 @@ try {
 } catch (PDOException $e) {
     die("Error!: " . $e->getMessage());
 }
-?>

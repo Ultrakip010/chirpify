@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,4 +19,3 @@
     </nav>
 </body>
 </html>
-<?php
