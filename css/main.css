@@ -29,6 +29,8 @@ body h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #0b3eb6;
+  font-size: 30px;
 }
 body form {
   display: flex;
@@ -40,6 +42,15 @@ body form label {
   font-size: large;
   font-family: "Roboto", sans-serif;
   font-style: italic;
+}
+body p a {
+  color: #0b3eb6;
+  text-decoration: none;
+  transition: 1sec;
+}
+body p a:hover {
+  color: red;
+  transition: 1sec;
 }
 
 p {

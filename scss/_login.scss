@@ -10,6 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $tertiary-color;
+    font-size: 30px
   }
 
   form {
@@ -21,6 +23,17 @@ body {
       font-size: large;
       font-family: 'Roboto', sans-serif;
       font-style: italic;
+      }
+    }
+    p{
+      a{
+        color: $tertiary-color;
+        text-decoration: none;
+        transition: 1sec;
+        &:hover {
+          color: red;
+          transition: 1sec;
+        }
       }
     }
   }

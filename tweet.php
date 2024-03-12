@@ -28,11 +28,10 @@ if(isset($_POST['name'])) {
 
 
 try {
-    $db = new PDO("mysql:host=localhost;dbname=y", "root", "");
-
-
-    if (isset($_POST['verzenden'])) {
-        $tweet_message = filter_input(INPUT_POST, tweet_message, FILTER_SANITIZE_STRING);
+    require('conn.php'); // connectie maken met de database
+   
+    if (isset($_POST)) {
+        $tweet_message = $_POST['tweet_message'];
 
         $query = $db->prepare("INSERT INTO tweets(tweet_message) VALUES (:tweet_message)");
         $query->bindParam(":tweet_message", $tweet_message);
@@ -53,7 +52,7 @@ try {
 <html lang="nl">
 <head>
     <title>tweaking</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
 </head>
 <body>
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
